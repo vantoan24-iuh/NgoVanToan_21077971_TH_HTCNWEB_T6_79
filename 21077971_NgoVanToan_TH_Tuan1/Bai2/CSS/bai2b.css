@@ -1,0 +1,11 @@
+.apple{
+    border: 1px solid blue;
+    width: 1000px;
+    margin: 0 auto; 
+    padding-left: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fa-star {
+    color: black; /* Đặt màu đen cho icon */
+    font-size: 24px; /* Thay đổi kích thước icon */
+  }
