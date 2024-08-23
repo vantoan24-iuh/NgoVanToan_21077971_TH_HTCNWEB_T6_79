@@ -1,0 +1,16 @@
+.home{
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+.header hr{
+    width: 100%;
+    border: 1px solid rgb(147, 50, 50);
+}
+.container hr{
+    width: 100%;
+    color: rgb(147, 50, 50);
+}
