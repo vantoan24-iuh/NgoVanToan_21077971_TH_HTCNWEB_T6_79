@@ -1,7 +1,7 @@
 #id{
-    /* background-color: blue; */
+    background-color: rgb(103, 170, 215);
     margin: auto;
-    width: 50%;
+    width: 55%;
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -21,19 +21,137 @@
 }
 #id .document{
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     padding-top: 5px;
     border-radius: 10px;
 }
-#id table{
-    margin: auto;
-    width: 100%;
-    border-collapse: collapse;
+
+.form{
+    margin: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+.form label{
+    font-weight: bold;
+    font-size: 17px;
+}
+.hoten{
+    padding: 5px;
+}
+.hoten input{
+    padding: 5px;
+    border-radius: 5px;
     border: 1px solid black;
 }
-.form{
-    margin: auto;
-    padding: 10px;
-    font-size: 19px;
+.address1{
+    padding: 5px;
+}
+.address1 input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 45%;
+}
+.address2{
+    padding: 5px;
+}
+.address2 input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 45%;
+}
+.city{
+    padding: 5px;
+}
+.city input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.city input:nth-child(2){
+    width: 25%;
+}
+.city input:nth-child(4){
+    width: 5%;
+}
+.city input:nth-child(6){
+    width: 9%;
+}
+.country{
+    padding: 5px;
+}
+.country input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.country input:nth-child(2){
+    width: 25%;
+}
+.product{
+    padding: 5px;
+}
+.product select{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.product select:nth-child(2){
+    width: 20%;
+}
+.date{
+    padding: 5px;
+}
+.date input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}.date input:nth-child(2){
+    width: 25%;
+}
+.serial{
+    padding: 5px;
+}
+.serial input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}.serial input:nth-child(2){
+    width: 25%;
+}
+.usefor{
+    padding: 5px;
+}
+.usefor input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.system{
+    padding: 5px;
+}
+.system input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.comment{
+    padding: 5px;
+}
+.comment input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.sub{
+    text-align: center;
+    padding: 5px;
+}
+.sub input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
 }
