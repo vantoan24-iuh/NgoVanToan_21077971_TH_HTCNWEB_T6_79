@@ -1,0 +1,21 @@
+.main{
+    border: 1px solid black;
+    width: 500px;
+}
+table, th, td{
+    border: 1px double black;
+}
+.tieude{
+    text-align: center;
+}
+.cot{
+    width: 5px;
+    text-align: center;
+}
+.main2{
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-color: blueviolet;
+    width: 750px;
+    font-size: 16px;
+}
