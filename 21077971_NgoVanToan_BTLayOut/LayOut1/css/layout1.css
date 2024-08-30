@@ -1,0 +1,27 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    width: 50%;
+}
+header {
+    background-color: #f8c9b8; 
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #000; 
+    height: 50px;
+}
+section {
+    background-color: #f8c9b8; 
+    padding: 20px;
+    height: 300px; 
+    border: 1px solid #000; 
+}
+footer {
+    background-color: #f8c9b8; 
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #000; 
+    height: 50px;
+}
