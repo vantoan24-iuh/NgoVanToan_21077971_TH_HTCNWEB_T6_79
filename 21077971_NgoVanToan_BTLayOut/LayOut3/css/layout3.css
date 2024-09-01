@@ -12,17 +12,17 @@ body{
     border: 1px solid #000; 
     height: 50px;
 }
-menu {
+.menu {
     background-color: #f8c9b8; 
     text-align: center;
     font-size: 24px;
     border: 1px solid #000; 
     height: 50px;
 }
-.container {
+.content {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     background-color: #f8c9b8;
     flex: 1;
 }
@@ -33,6 +33,7 @@ nav, section, aside {
     border: 1px solid #000;
     height: 100px;
 }
+
 footer {
     background-color: #f8c9b8; 
     text-align: center;
