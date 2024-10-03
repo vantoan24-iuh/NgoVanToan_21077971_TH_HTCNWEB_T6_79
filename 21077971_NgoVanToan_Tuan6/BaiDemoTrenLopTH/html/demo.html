@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>DeMo</title>
+
+    <script src="../js/demo.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-4 col-md-3">
+                <img src="../img/logo7.png" alt="Logo">
+            </div>
+            <div class="col-8 col-md-9">
+                <h1>Trường Đại Học Thủy Lợi</h1>
+                <h2>Đề tài: Xây dựng website quản lý sinh viên</h2>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-sm bg-danger justify-content-around">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#frmdk">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <h1>Thông tin sinh viên</h1>
+            <table class="table table-bordered table-info" id="table">
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>Ma Sinh Vien</td>
+                        <td>Ho ten</td>
+                        <td>Ngay sinh</td>
+                        <td>Que quan</td>
+                        <td>Lop</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="frmdk">
+        <div class="modal-header">
+            <h1>Thông tin sinh viên</h1>
+            <button data-dismiss="modal" class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="MaSV">MaSV:</label>
+                    <input type="text" class="form-control" id="txtMa">
+                    <p id="erma">(*)</p>
+                </div>
+                <div class="form-group">
+                    <label for="name">Ho Ten:</label>
+                    <input type="text" class="form-control" id="txtHT">
+                    <p id="erHT">(*)</p>
+                </div>
+                <div class="form-group">
+                    <label for="ngaySinh">Ngay Sinh:</label>
+                    <input type="date" class="form-control" id="ngaySinh">
+                    <p id="erNS">(*)</p>
+                </div>
+                <div class="form-group">
+                    <label for="queQuan">Que Quan:</label>
+                    <input type="text" class="form-control" id="txtQQ">
+                    <p id="erQQ">(*)</p>
+                </div>
+                <div class="form-group">
+                    <label for="lop">Lop:</label>
+                    <input type="text" class="form-control" id="txtLop">
+                    <p id="erlop">(*)</p>
+                </div>
+                <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
+            </form>
+        </div>
+        <div class="modal-footer text-center">
+            Ngo Van Toan
+        </div>
+    </div>
+</body>
+
+</html>

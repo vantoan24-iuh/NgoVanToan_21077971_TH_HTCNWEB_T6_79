@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background and Image</title>
+    <style>
+        #image {
+            max-width: 100%;
+            /* Responsive */
+            transition: width 0.5s;
+            /* Smooth transition for resizing */
+        }
+    </style>
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function changeImage() {
+            const img = document.getElementById('image');
+            img.src = img.src.includes('hinh1.jpg') ? 'hinh2.jpg' : 'hinh1.jpg'; // Toggle between two images
+        }
+
+        function resizeImage() {
+            const img = document.getElementById('image');
+            img.style.width = img.style.width === '200px' ? '400px' : '200px'; // Toggle between two sizes
+        }
+
+        function validateAddress(address) {
+            const addressRegex = /^[0-9]+\s[A-Za-z\s]+,\s[A-Za-z\s]+,\s[A-Za-z\s]+$/; // Example: 123 Street, City, State
+            return addressRegex.test(address);
+        }
+
+        function validateName(name) {
+            const nameRegex = /^(?=.{2,})([A-Z][a-z]*(\s[A-Z][a-z]*)*)$/; // At least 2 words, first letter uppercase
+            return nameRegex.test(name);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Change Background Color and Image</h1>
+
+    <!-- Background Color Buttons -->
+    <button onclick="changeBackgroundColor('red')">Red</button>
+    <button onclick="changeBackgroundColor('green')">Green</button>
+    <button onclick="changeBackgroundColor('blue')">Blue</button>
+
+    <hr>
+
+    <!-- Image Section -->
+    <img id="image" src="img/hinh1.png" alt="Image" />
+    <br>
+    <button onclick="changeImage()">Change Image</button>
+    <button onclick="resizeImage()">Resize Image</button>
+
+    <hr>
+
+    <!-- Validation Section -->
+    <h2>Validation Examples</h2>
+    <div>
+        <h3>Validate Address</h3>
+        <input type="text" id="address" placeholder="Enter your address" />
+        <button onclick="alert(validateAddress(document.getElementById('address').value) ? 'Valid Address' : 'Invalid Address')">Check Address</button>
+    </div>
+    <div>
+        <h3>Validate Name</h3>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <button onclick="alert(validateName(document.getElementById('name').value) ? 'Valid Name' : 'Invalid Name')">Check Name</button>
+    </div>
+</body>
+
+</html>

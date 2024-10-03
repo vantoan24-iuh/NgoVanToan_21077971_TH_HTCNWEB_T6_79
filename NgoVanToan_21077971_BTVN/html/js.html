@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function timerFunc() {
+            var now = new Date();
+            var hour = now.getHours();
+            var min = now.getMinutes();
+            var sec = now.getSeconds();
+            document.getElementById("clock").value =
+                "" + hour + ":" + min + ":" + sec;
+        }
+        setInterval('timerFunc()', 1000);
+    </script>
+    <input type="text" id="clock" />
+</body>
+
+</html>
+
+<!-- 1.Viết hàm đổi màu nền của trang web, với 3 button Red, Green, Blue 
+2. Chèn vào trang một hình, 2 button: 
+Button1: Click vào sẽ đổi hình 
+button2: Click vào sẽ thay đổi kích thước của hình 
+
+
+- viết biểu thức chính quy
++ địa chỉ nhà 
++ ho tên của mình (in hoa đầu hoặc in hết, mỗi từ cách nhau một khoảng trắng) (tối thiểu 2 từ)
+-->

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    border: 1px solid gray;
+
+}
+
+.nav-bar {
+    height: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.nav-bar li {
+    display: inline-block;
+}
+
+main {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;height: auto;
+}
+
+.modal {
+    width: 960px;
+    height: 700px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.error {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+.btn {
+    background-color: rgb(116, 237, 237);
+    color: #fff;
+}

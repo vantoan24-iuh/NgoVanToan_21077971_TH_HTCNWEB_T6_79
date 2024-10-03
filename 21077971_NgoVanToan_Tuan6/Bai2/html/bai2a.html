@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Bai 2a</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0 auto;
+        }
+        
+        .container {
+            border: 1px solid #2f6498;
+            height: 600px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        
+        .card {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        
+        .product-description {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col" id="form">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5>Checkout</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Product 1
+                                    <p class="product-description">Lorem ipsum dolor sit amet</p>
+                                </td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>Product 2
+                                    <p class="product-description">Lorem ipsum dolor sit amet</p>
+                                </td>
+                                <td>$120</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong>$320</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="card">
+                    <h5>Credit Card Details</h5>
+                    <form>
+                        <div class="row d-flex">
+                            <div class="form-group col-md-6">
+                                <label for="cardHolder">Card Holder</label>
+                                <input type="text" class="form-control" id="cardHolder" placeholder="Card Holder" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="expiryDate">Expiration Date</label>
+                                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                        <div class="row d-flex">
+                            <div class="form-group col-md-6">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Card Number" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cvc">CVC</label>
+                                <input type="text" class="form-control" id="cvc" placeholder="CVC" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="col-12 btn btn-primary btn-block" style="margin-top: 10px;">Proceed</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
