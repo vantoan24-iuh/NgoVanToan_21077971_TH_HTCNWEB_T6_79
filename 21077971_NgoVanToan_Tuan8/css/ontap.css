@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    border: 1px solid gray;
+}
+
+.nav-bar {
+    height: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.nav-bar li {
+    display: inline-block;
+}
+
+.modal {
+    width: 960px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}

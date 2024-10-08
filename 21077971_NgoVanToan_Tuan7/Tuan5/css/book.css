@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Mea+Culpa&display=swap');
+
+#navbar {
+    background-color: black;
+    height: 50px;
+    color: #fff;
+}
+.col-3 a{
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.col-5 a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.col-5 a:hover {
+    color: yellow;
+}
+
+.col-4 a {
+    color: #fff;
+    padding-right: 5px;
+}
+
+.col-4 button {
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    width: 120px;
+}
+.col-12 h2{
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+.col-sm-6 {
+    margin-top: 180px;
+    margin-left: 100px;
+}
+
+.col-sm-6 button {
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    width: 120px;
+}
+.col-12 a{
+    color: black;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.col-12 a:hover{
+    background-color: black;
+    border-radius: 20px;
+    color: #fff;
+}
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.card-body button {
+    border-radius: 20px;
+    float: right;
+    color: #fff;
+}
+
+.book_section {
+    position: relative;
+}
+  
+.book_section .heading_container {
+    margin-bottom: 25px;
+}
+  
+.book_section .form_container .form-control {
+    float: right;
+    width: 80%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border: 1px solid #999;
+    outline: none;
+    color: #000000;
+    border-radius: 5px;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+  
+.book_section .form_container .form-control::-webkit-input-placeholder {
+    color: #222222;
+}
+  
+.book_section .form_container .form-control:-ms-input-placeholder {
+    color: #222222;
+}
+  
+.book_section .form_container .form-control::-ms-input-placeholder {
+    color: #222222;
+}
+  
+.book_section .form_container .form-control::placeholder {
+    color: #222222;
+}
+  
+.book_section .form_container .nice-select .current {
+    font-size: 16px;
+}
+  
+.book_section .form_container button {
+    margin-left: 160px;
+    margin-top: 15px;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 55px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+}
+  
+.book_section .form_container button:hover {
+    background-color: #e69c00;
+}
+  
+.map_container {
+    width: 100%;
+    height: 345px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.heading h2{
+    margin-top: 80px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: -100px;
+}

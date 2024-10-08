@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Mea+Culpa&display=swap');
+.container-fluid {
+    
+    height: 800px;
+}
+#navbar {
+    background-color: black;
+    height: 50px;
+    color: #fff;
+}
+.col-3 a{
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.col-5 a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.col-5 a:hover {
+    color: yellow;
+}
+
+.col-4 a {
+    color: #fff;
+    padding-right: 5px;
+}
+
+.col-4 button {
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    width: 120px;
+}
+.col-6 img{
+    margin-top: 70px;
+    margin-left: 200px;
+}
+.col-sm-4 h2{
+    font-family: 'Alex Brush', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+.col-sm-4{
+    margin-top: 300px;
+}
+.col-sm-4 button {
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    width: 120px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/font-awesome.all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/fontawesome.js"></script>
+   
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="navbar">
+            <div class="col-3 text-center">
+                <a class="navbar-brand">Feare</a>
+            </div>
+            <div class="col-5">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/book.html">BOOK TABLE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 mt-2 text-center">
+                <a href="" class="fas fa-user" id="user-btn"></a>
+                <a href="" class="fas fa-shopping-cart" id="cart-btn"></a>
+                <a href="" class="fas fa-search" id="search-btn"></a>
+                <button type="button" class="btn btn-warning">Order Online</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Fast Food Restaurant</h2>
+                <p>
+                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                </p>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Order Now</button>
+
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+      
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Order</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="tele" class="col-form-label">Telephone</label>
+                                <input type="tel" class="form-control" id="tele">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <input id="check" type="checkbox" checked="checked" name="remember"> Check me out
+                            </div>  
+                        </form>
+                    </div>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Order</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
