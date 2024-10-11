@@ -75,15 +75,48 @@ $(document).ready(function() {
         }
     });
 
+    function kTraDoDung() {
+        var total = 0;
+        // Lấy tất cả checkbox có id là 'check'
+        $('input[id="check"]:checked').each(function() {
+            total += parseInt($(this).val());
+        });
+        $('#txtTienDoDung').val(total);
+
+        return total > 0;
+    }
+
+    function tinhTongTien() {
+        // Lấy giá trị tiền dịch vụ và tiền đồ dùng
+        var tienDichVu = parseInt($('#txtgia').val()) || 0; // Nếu không có giá trị thì mặc định là 0
+        var tienDoDung = parseInt($('#txtTienDoDung').val()) || 0;
+
+        // Tính tổng tiền
+        var tongTien = tienDichVu + tienDoDung;
+
+        // Cập nhật tổng tiền vào ô txttong
+        $('#txttong').val(tongTien);
+    }
+    $('input[id="check"]').change(function() {
+        kTraDoDung();
+        tinhTongTien();
+    });
+
+    $('#dichvu').change(function() {
+        kTraDichVu();
+        tinhTongTien(); // Tính lại tổng tiền khi thay đổi dịch vụ
+    });
+
     $('#txtMaSV').blur(kTraMaSV);
     $('#txtHoTen').blur(kTraHoTen);
     $('#email').blur(ktraEmail);
     $('#dichvu').blur(kTraDichVu);
-    // $('input[name="check"]').change(kTraDoDung);
+    $('#check').blur(kTraDoDung);
 
     let count = 1
     $('#btn').click(function() {
-        if (kTraMaSV() || kTraHoTen() || ktraEmail() || kTraDichVu() || kTraDoDung()) {
+        if (kTraMaSV() && kTraHoTen() && ktraEmail() && kTraDichVu() && kTraDoDung()) {
+            // Lấy các giá trị từ form
             var maSV = $('#txtMaSV').val();
             var hoten = $('#txtHoTen').val();
             var email = $('#email').val();
@@ -91,9 +124,11 @@ $(document).ready(function() {
             var tdd = $('#txtTienDoDung').val();
             var tong = $('#txttong').val();
 
-            var tableNew = '<tr><td>' + count++ + '<tr><td>' + maSV + '</td><td>' + hoten + '</td><td>' + email + '</td><td>' + tdv + '</td><td>' + tdd + '</td><td>' + tong + '</td></tr>';
-            $('#table').append(tableNew);
+            // Tạo hàng mới và thêm vào bảng
+            var tableNew = '<tr><td>' + count++ + '</td><td>' + maSV + '</td><td>' + hoten + '</td><td>' + email + '</td><td>' + tdv + '</td><td>' + tdd + '</td><td>' + tong + '</td></tr>';
+            $('#table tbody').append(tableNew);
 
+            // Reset form sau khi thêm thành công
             $('#txtMaSV').val('');
             $('#txtHoTen').val('');
             $('#email').val('');
@@ -102,6 +137,7 @@ $(document).ready(function() {
             $('#txtTienDoDung').val('');
             $('#txttong').val('');
         }
-
     });
+
+
 });
