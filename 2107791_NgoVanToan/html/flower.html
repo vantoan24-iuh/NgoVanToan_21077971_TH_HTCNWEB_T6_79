@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/flower.css">
+    <title>Đặt mua hoa</title>
+    <script src="../js/flower.js"></script>
+</head>
+
+<body>
+    <div class="container border bg-white">
+        <div class="row">
+            <div class="col-12">
+                <img src="../img/mau-banner-dich-vu-dien-hoa-dep-mat-thu-hut-1.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#frmdk">ĐẶT MUA HOA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CÂY XANH VĂN PHÒNG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TIN TỨC</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <img src="../img/hinh2.webp" alt="" width="90%">
+            </div>
+            <div class="col-10">
+                <h1>DANH SÁCH THÔNG TIN ĐẶT HÀNG NHANH</h1>
+                <table class="table table-bordered" id="table">
+                    <tr>
+                        <th>STT</th>
+                        <th>HỌ VÀ TÊN</th>
+                        <th>SỐ ĐIỆN THOẠI</th>
+                        <th>NGÀY ĐẶT</th>
+                        <th>EMAIL CỦA BẠN</th>
+                        <th>LOẠI HOA</th>
+                        <th>LOẠI THANH TOÁN</th>
+                    </tr>
+                </table>
+                <div class="footer">
+                    <p class="contact">MSSV: 21077971 - Lớp: DHHTT18A - Họ và tên: Ngô Văn Toàn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="frmdk">
+        <div class="modal-header">
+            <h1>THÔNG TIN ĐẶT HÀNG NHANH</h1>
+            <button data-dismiss="modal" class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="row p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="hoten">Họ và tên</label>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <input type="text" name="hoten" id="hoten" class="form-control">
+                        <p class="error" id="errHoTen">(*)</p>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="sdt">Số điện thoại</label>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <input type="text" name="sdt" id="sdt" class="form-control">
+                        <p class="error" id="errSDT">(*)</p>
+                    </div>
+
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="ngay">Ngày đặt</label>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <input type="date" name="ngay" id="ngay" class="form-control">
+                        <p class="error" id="errDate">(*)</p>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="email">Email của bạn</label>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <input type="text" name="email" id="email" class="form-control">
+                        <p class="error" id="errEmail">(*)</p>
+                    </div>
+                </div>
+                <div class="row form-group p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="hoten">Chọn loại hoa</label>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <Select id="chonHoa" class="form-control">
+                            <Option>Hoa hồng Nhung</Option>
+                            <Option>Hoa hồng vàng</Option>
+                            <Option>Hoa hồng Trắng</Option>
+                            <Option>Hoa lan</Option>
+                            <Option>Hoa nhiều loại</Option>
+                        </Select>
+                    </div>
+                </div>
+                <div class="row p-1">
+                    <div class="col-4 col-md-4">
+                        <label for="tienMat">Loại thanh toán</label>
+                    </div>
+                    <div class="col-3 col-md-4">
+                        <input type="radio" name="chon" id="tienMat" value="Tiền mặt"> Tiền mặt
+                    </div>
+                    <div class="col-4 col-md-4">
+                        <input type="radio" name="chon" id="chuyenKhoan" value="Chuyển khoản"> Chuyển khoản
+                    </div>
+                </div>
+                <div class="row form-group p-3">
+                    <button type="button" class="btn btn-success btn-block" id="btnDatHang">Đặt hàng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
